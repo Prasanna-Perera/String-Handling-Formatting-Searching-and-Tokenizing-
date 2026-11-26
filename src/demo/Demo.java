@@ -8,16 +8,19 @@ package demo;
  *
  * @author ASUS ROG
  */
-public class Demo {
-
-    /**
-     * @param args the command line arguments
-     */
+import java.util.regex.*;
+class Demo{
 	public static void main(String args[]){
-		String fs=String.format("%2$020.2f",100,12345600.3435); 
-		System.out.println(fs); //
+		String source="abc0X12bcjtg0x456bcrty0x12a&g0xhjd0123bcgh";
+		Pattern p=Pattern.compile("0[Xx][a-fA-F0-9]+");
+		Matcher m=p.matcher(source);
+		while(m.find()){
+			String str=m.group();
+			System.out.println(str);
+		}
 	}
 }
+
 
 
 
