@@ -8,18 +8,19 @@ package demo;
  *
  * @author ASUS ROG
  */
-import java.util.regex.*;
+import java.util.*;
 class Demo{
 	public static void main(String args[]){
-		String source="abc0X12bcjtg0x456bcrty0x12a&g0xhjd0123bcgh";
-		Pattern p=Pattern.compile("0[Xx][a-fA-F0-9]+");
-		Matcher m=p.matcher(source);
-		while(m.find()){
-			String str=m.group();
-			System.out.println(str);
+		String source="S0001 Nimal\t67\n76";
+		StringTokenizer st=new StringTokenizer(source);
+		while(st.hasMoreTokens()){
+			String token=st.nextToken();
+			System.out.println(token);
 		}
 	}
 }
+//Default delimiter->Space, newline, tab
+
 
 
 
