@@ -9,12 +9,15 @@ package demo;
  * @author ASUS ROG
  */
 import java.util.*;
+import java.util.regex.*;
 class Demo{
 	public static void main(String args[]){
-		String source="S0001,Nimal,67,76";
-		String[] rowData=source.split(",");
-		for(String str : rowData){
-			System.out.println(str);
+		String source="S0001&Nimal*67%76";
+		Scanner input=new Scanner(source);
+		Pattern p=Pattern.compile("[\\W]");
+		input.useDelimiter(p);
+		while(input.hasNext()){
+			System.out.println(input.next());
 		}
 	}
 }
