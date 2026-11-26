@@ -11,15 +11,14 @@ package demo;
 import java.util.*;
 class Demo{
 	public static void main(String args[]){
-		String source="S0001 Nimal\t67\n76";
-		StringTokenizer st=new StringTokenizer(source);
-		while(st.hasMoreTokens()){
-			String token=st.nextToken();
-			System.out.println(token);
+		String source="S0001,Nimal,67,76";
+		String[] rowData=source.split(",");
+		for(String str : rowData){
+			System.out.println(str);
 		}
 	}
 }
-//Default delimiter->Space, newline, tab
+
 
 
 
