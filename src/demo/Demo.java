@@ -13,18 +13,10 @@ public class Demo {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]){
-		String fs=String.format("%d",100,200,300,400);
-		System.out.println(fs); //100
-		
-		fs=String.format("%2$d",100,200,300,400);
-		System.out.println(fs); //200
-		
-		fs=String.format("%4d,%3d,%2d,%1d",100,200,300,400);
-		System.out.println(fs); //400,300,200,100
-		
-		fs=String.format("%d,%d,%d,%d",100,200,300,400);
-		System.out.println(fs); //100,200,300,400
+	public static void main(String args[]){
+		String fs=String.format("%2$10f,%1$15d",100,2.5);
+		System.out.println(fs); //
 	}
 }
+
 
