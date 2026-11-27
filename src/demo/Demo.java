@@ -13,16 +13,12 @@ class Demo{
 	public static void main(String args[]){
 		double d=1.0;
 		int x=200;
-		d=x; //Legal, wider conversion
-		x=(int)d; //Legal, narrow casting
+				
+		Double dob=d;
+		Integer iob=x;
+		dob=x; //Illegal
 		
-		Double dob=null;
-		Integer iob=null;
-		dob=iob;	//Illegal
-		dob=(Double)iob; //Illegal
-		iob=dob; //Illegal
-		iob=(Integer)dob; //Illegal
-		
+		d=iob; //Legal->auto unbox iob->int, wider conversion int to double
 	}
 }
 
