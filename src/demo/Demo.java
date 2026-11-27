@@ -11,20 +11,15 @@ package demo;
 import java.io.*;
 class Demo{
 	public static void main(String args[]){
-		File f1=new File("Demo.java");
-		File f2=new File("icet");
-		
+		File f1=new File("E:/ICD125/IO/Demo.java");//Abolute path
 		System.out.println("f1 : "+f1.exists());;
+		
+		File f2=new File("../ICD125/IO/Demo.java"); //Relative Path
 		System.out.println("f2 : "+f2.exists());;
-		
-		System.out.println("f1 is a directory : "+f1.isDirectory());;
-		System.out.println("f1 is a file : "+f1.isFile());;
-		
-		System.out.println("f2 is a directory : "+f2.isDirectory());;
-		System.out.println("f2 is a file : "+f2.isFile());;
 		
 	}
 }
+
 
 
 
