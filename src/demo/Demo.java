@@ -10,12 +10,14 @@ package demo;
  */
 import java.util.*;
 class Demo{
-	public static Double myMethod(){
-		double d=12.34;
-		System.out.println("myMethod()"); 
-		return d; //Legal auto boxing
+	public static void main(String args[]){
+		//ArrayList <int>intList=new ArrayList<>(); //Illegal
+		ArrayList <Integer>intList=new ArrayList<>();
+		intList.add(100);
+		intList.add(200);
 	}
 }
+
 
 
 
