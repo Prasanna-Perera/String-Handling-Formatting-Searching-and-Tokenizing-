@@ -11,18 +11,15 @@ package demo;
 import java.util.*;
 class Demo{
 	public static void main(String args[]){
-		String name="Dickwella";
-		String city="Dickwella";
-		System.out.println("Name : "+name);
-		System.out.println("City : "+city);
-		//
-		//
-		String newName=name.concat(" Maya");
-		System.out.println("Name : "+name);
-		System.out.println("New Name : "+newName);
-		System.out.println("City : "+city);
+		String name=" Dickwella ";
+		System.out.println(name.length());//prints 11 //length(), array->length
+		name.trim();
+		System.out.println(name.length());//prints 11
+		String newStr=name.trim();
+		System.out.println(newStr.length());//prints 9
 	}
 }
+
 
 
 
