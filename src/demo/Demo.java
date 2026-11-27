@@ -8,12 +8,15 @@ package demo;
  *
  * @author ASUS ROG
  */
+import java.util.*;
 class Demo{
-	public static Double myMethod(double dob){
-		System.out.println("myMethod(double)"); 
-		return dob; //Legal, unboxing
+	public static void main(String args[]){
+		Double dob=new Double(12.43);
+		double d=1.0;
+		System.out.println(dob+d); //13.43-->auto unboxing
 	}
 }
+
 
 
 
