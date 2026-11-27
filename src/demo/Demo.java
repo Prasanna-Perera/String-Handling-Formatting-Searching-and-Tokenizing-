@@ -12,11 +12,8 @@ import java.util.*;
 class Demo{
 	public static void main(String args[]){
 		String name=" Dickwella ";
-		System.out.println(name.length());//prints 11 //length(), array->length
-		name.trim();
-		System.out.println(name.length());//prints 11
-		String newStr=name.trim();
-		System.out.println(newStr.length());//prints 9
+		System.out.println(name);//Dickwella
+		System.out.println(name.trim().toUpperCase());
 	}
 }
 
