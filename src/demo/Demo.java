@@ -11,9 +11,18 @@ package demo;
 import java.util.*;
 class Demo{
 	public static void main(String args[]){
-		Double dob=new Double(12.43);
 		double d=1.0;
-		System.out.println(dob+d); //13.43-->auto unboxing
+		int x=200;
+		d=x; //Legal, wider conversion
+		x=(int)d; //Legal, narrow casting
+		
+		Double dob=null;
+		Integer iob=null;
+		dob=iob;	//Illegal
+		dob=(Double)iob; //Illegal
+		iob=dob; //Illegal
+		iob=(Integer)dob; //Illegal
+		
 	}
 }
 
