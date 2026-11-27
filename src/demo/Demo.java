@@ -11,13 +11,10 @@ package demo;
 import java.util.*;
 class Demo{
 	public static void main(String args[]){
-		int x=100;
-		Integer iob=x; //Legal, since JDK5 (Auto boxing)
-		System.out.println(x+" : "+iob);//100 100
-		
-		int y;
-		y=iob; //Legal, since JDK5 (Auto unboxing)
-		System.out.println(y+" : "+iob);//100 100
+		double d=12.34;
+		Double dob;
+		dob=d; //Legal, autoboxing
+		System.out.println(dob); //
 	}
 }
 
