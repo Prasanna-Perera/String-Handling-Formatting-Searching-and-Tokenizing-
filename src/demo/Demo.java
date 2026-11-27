@@ -11,16 +11,14 @@ package demo;
 import java.util.*;
 class Demo{
 	public static void main(String args[]){
-		double d=1.0;
-		int x=200;
-				
-		Double dob=d;
-		Integer iob=x;
-		dob=x; //Illegal
-		
-		d=iob; //Legal->auto unbox iob->int, wider conversion int to double
+		String s1="abc";
+		String s2="abc";
+		String s3=new String("abc");
+		System.out.println(s1==s2); //true
+		System.out.println(s1==s3); //false
 	}
 }
+
 
 
 
