@@ -11,10 +11,9 @@ package demo;
 import java.util.*;
 class Demo{
 	public static void main(String args[]){
-		//ArrayList <int>intList=new ArrayList<>(); //Illegal
-		ArrayList <Integer>intList=new ArrayList<>();
-		intList.add(100);
-		intList.add(200);
+		Double dob=new Double(12.43);
+		double d;
+		d=dob; //Legal, auto unboxing
 	}
 }
 
