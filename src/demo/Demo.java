@@ -9,16 +9,15 @@ package demo;
  * @author ASUS ROG
  */
 import java.util.*;
-import java.util.regex.*;
 class Demo{
 	public static void main(String args[]){
-		String source="S0001&Nimal*67%76";
-		Scanner input=new Scanner(source);
-		Pattern p=Pattern.compile("[\\W]");
-		input.useDelimiter(p);
-		while(input.hasNext()){
-			System.out.println(input.next());
-		}
+		int x=100;
+		Integer iob=x; //Legal, since JDK5 (Auto boxing)
+		System.out.println(x+" : "+iob);//100 100
+		
+		int y;
+		y=iob; //Legal, since JDK5 (Auto unboxing)
+		System.out.println(y+" : "+iob);//100 100
 	}
 }
 
