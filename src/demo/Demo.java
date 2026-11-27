@@ -11,11 +11,16 @@ package demo;
 import java.util.*;
 class Demo{
 	public static void main(String args[]){
-		String s1="abc";
-		String s2="abc";
-		String s3=new String("abc");
-		System.out.println(s1==s2); //true
-		System.out.println(s1==s3); //false
+		String name="Dickwella";
+		String city="Dickwella";
+		System.out.println("Name : "+name);
+		System.out.println("City : "+city);
+		//
+		//
+		String newName=name.concat(" Maya");
+		System.out.println("Name : "+name);
+		System.out.println("New Name : "+newName);
+		System.out.println("City : "+city);
 	}
 }
 
