@@ -10,11 +10,12 @@ package demo;
  */
 import java.util.*;
 class Demo{
+	public static void myMethod(Double dob){
+		System.out.println("myMethod(Double)"); 
+	}
 	public static void main(String args[]){
 		double d=12.34;
-		Double dob;
-		dob=d; //Legal, autoboxing
-		System.out.println(dob); //
+		myMethod(d);//auto boxing
 	}
 }
 
